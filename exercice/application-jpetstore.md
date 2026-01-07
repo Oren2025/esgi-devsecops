@@ -8,4 +8,4 @@ L'application utilisée dans le cadre de ce TP se nomme JPetStore et est disponi
 <mark style="color:red;">**Attention à bien réaliser un fork du repo et d'utiliser votre repo pour tout le reste de l'exercice !**</mark>
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

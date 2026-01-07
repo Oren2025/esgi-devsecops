@@ -76,7 +76,7 @@ Lors de la prmière connexion à Jenkins, utiliser le mot de passe Admin initial
 
 Sélectionner l'installation des plugins suggérés (plugins par défaut de Jenkins)
 
-![](../../images/jenkins1.png)
+![](../../.gitbook/assets/jenkins1.png)
 
 ### Création d'un utilisateur admin
 

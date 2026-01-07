@@ -43,7 +43,7 @@ Et utliser le code ci-dessous pour définir le workflow du pipeline dans le bloc
 <mark style="color:orange;">**Utiliser votre fork du repository dans le stage**</mark><mark style="color:orange;">**&#x20;**</mark><mark style="color:orange;">**`checkout scm`**</mark>
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Lancer le build du pipeline
 
@@ -57,4 +57,4 @@ Lors du premier lancement, cette étape peut prendre un peu de temps...
 
 Le résultat doit ressembler à cela
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -10,7 +10,7 @@ docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
 
 Une fois le conteneur déployé, vérifiez qu'il est bien démarré et en état [`running`](#user-content-fn-1)[^1].
 
-![Liste des conteneurs](../../images/docker-sonarqube.jpg)
+![Liste des conteneurs](../../.gitbook/assets/docker-sonarqube.jpg)
 
 ## Connnexion à SonarQube
 
@@ -24,7 +24,7 @@ SonarQube vous demande de modifier le mot de passe admin à la première connexi
 
 Voici la console de SonarQube :
 
-![](../../images/sonarqube1.jpg)
+![](../../.gitbook/assets/sonarqube1.jpg)
 
 ###
 

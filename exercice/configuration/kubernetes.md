@@ -1,14 +1,35 @@
 # Kubernetes
 
-## Ajout des credentials Kubernetes
+## Création d'un cluster EKS
 
-Depuis `Manage Jenkins ⇒ Credentials`, ajouter les credentials pour le cluster Kubernetes comme indiqué ci-dessous
+Depuis la console AWS, créer un cluster EKS (en auto mode)
 
-<figure><img src="https://github.com/smontri/esgi-devsecops/raw/main/images/k8s-creds.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+### Sélection du mode Auto
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+### Paramètres de configurations
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+* `Name` : nom que vous donnez à votre cluster
+* `Kubernetes version` : 1.34
+* `Cluster IAM role` : s'assurer de sélectionner le role LabEksClusterRole
+* `Node IAM role` : s'assurer de sélectionner le role LabEksNodeRole
+
+Puis le bouton <mark style="color:orange;">`Create`</mark> pour lancer la création du cluster
 
 {% hint style="info" %}
-Il s'agit d'ajouter le fichier de config pour le cluster Kubernetes cible, à demander à votre intervenant
+Le temps de création du cluster est relativement long, environ 10-15mn !
 {% endhint %}
+
+## Ajout des credentials AWS
+
+Depuis `Manage Jenkins ⇒ Credentials`, ajouter les credentials pour AWS pour que le pipeline puisse se connecter à l'environnement AWS Academy&#x20;
+
+<div data-full-width="false"><figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure></div>
 
 ## Installation de la commande kubectl
 

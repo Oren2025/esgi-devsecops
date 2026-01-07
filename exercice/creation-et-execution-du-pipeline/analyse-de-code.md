@@ -41,11 +41,11 @@ stage("quality gate"){
 
 Puis lancer un nouveau build, vous pouvez suivre l'exécution du build dans la vue `Pipeline Console`
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 Le pipeline doit, à présent, ressembler à ceci :
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Résultats dans SonarQube
 

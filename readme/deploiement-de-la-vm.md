@@ -18,7 +18,7 @@ Faire un fork du repository ci-dessous afin d'avoir votre repository sous votre 
 
 {% embed url="https://github.com/smontri/esgi-devsecops.git" %}
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Bouton fork depuis la page GitHub du repository
@@ -38,9 +38,9 @@ Le répertoire terraform contient les templates AWS et Azure pour le déploiemen
 
 Dans le cadre de ce TP, nous allons utiliser AWS avec le lab mis à disposition par votre intervenant.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Déploiement avec Terraform
 
@@ -72,7 +72,7 @@ Pour cela nous allons utiliser la commande `terraform init`
 terraform init
 ```
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Planification du déploiement
 

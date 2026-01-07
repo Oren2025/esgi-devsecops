@@ -1,4 +1,4 @@
-# Pipeline DevSecOps
+# 3. TP DevSecOps
 
 Le pipeline DevSecOps est décrit via le schéma ci-dessous.
 
@@ -14,4 +14,4 @@ En utilisant Jenkins, vous allez définir les différentes étapes du workflow&#
 * Déploiement en Docker
 * Déploiement vers un cluster K8s
 
-![](../images/architecture.jpg)
+![](../.gitbook/assets/architecture.jpg)
