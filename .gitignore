@@ -34,4 +34,4 @@ override.tf.json
 terraform.rc
 
 # Ignore Terraform lock file
-.terraform.lock.hcl
+.terraform.lock.hcljenkins.sh
