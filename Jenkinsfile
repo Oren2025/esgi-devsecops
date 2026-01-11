@@ -21,19 +21,23 @@ pipeline {
 
     stage('Build & Test (Maven)') {
       steps {
-        sh 'mvn -B clean test'
+        dir('demo-app') {
+          sh 'mvn -B clean test'
+        }
       }
     }
 
     stage('SonarQube Analysis') {
       steps {
-        withSonarQubeEnv('sonar-local') {
-          sh '''
-            $SCANNER_HOME/bin/sonar-scanner \
-              -Dsonar.projectName=esgi-devsecops \
-              -Dsonar.projectKey=esgi-devsecops \
-              -Dsonar.java.binaries=target/classes
-          '''
+        dir('demo-app') {
+          withSonarQubeEnv('sonar-local') {
+            sh '''
+              $SCANNER_HOME/bin/sonar-scanner \
+                -Dsonar.projectName=esgi-devsecops \
+                -Dsonar.projectKey=esgi-devsecops \
+                -Dsonar.java.binaries=target/classes
+            '''
+          }
         }
       }
     }
