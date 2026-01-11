@@ -35,7 +35,8 @@ pipeline {
               $SCANNER_HOME/bin/sonar-scanner \
                 -Dsonar.projectName=esgi-devsecops \
                 -Dsonar.projectKey=esgi-devsecops \
-                -Dsonar.java.binaries=target/classes
+                -Dsonar.java.binaries=target/classes \
+                -Dsonar.login=$SONAR_AUTH_TOKEN
             '''
           }
         }
