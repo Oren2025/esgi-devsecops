@@ -35,3 +35,9 @@ terraform.rc
 
 # Ignore Terraform lock file
 .terraform.lock.hcljenkins.sh
+
+# Terraform (runtime)
+**/.terraform/
+**/*.tfstate
+**/*.tfstate.*
+crash.log
