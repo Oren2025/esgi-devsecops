@@ -11,32 +11,21 @@ pipeline {
   }
 
   stages {
+    stage('Clean workspace') {
+      steps { cleanWs() }
+    }
 
-    stage('clean Workspace') {
+    stage('Checkout') {
+      steps { checkout scm }
+    }
+
+    stage('Build & Test (Maven)') {
       steps {
-        cleanWs()
+        sh 'mvn -B clean test'
       }
     }
 
-    stage('checkout scm') {
-      steps {
-        checkout scm
-      }
-    }
-
-    stage('maven compile') {
-      steps {
-        sh 'mvn clean compile'
-      }
-    }
-
-    stage('maven test') {
-      steps {
-        sh 'mvn test'
-      }
-    }
-
-    stage('Sonarqube Analysis') {
+    stage('SonarQube Analysis') {
       steps {
         withSonarQubeEnv('sonar-local') {
           sh '''
@@ -49,13 +38,10 @@ pipeline {
       }
     }
 
-    stage('quality gate') {
+    stage('Quality Gate') {
       steps {
-        script {
-          waitForQualityGate abortPipeline: false, credentialsId: 'sonar-token'
-        }
+        waitForQualityGate abortPipeline: false, credentialsId: 'sonar-token'
       }
     }
-
   }
 }
